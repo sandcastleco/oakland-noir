@@ -76,8 +76,19 @@ body {
 
   .titleGroup {
     position: absolute;
-    left: 10vw;
+    margin-left: 50px;
+    //margin-left: auto;
     top: 70px;
+
+    @include media-breakpoint-only(md) {
+      margin-left: 8vw !important; 
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-left: 8vw !important; 
+    }
+
+    
 
     .sub {
       margin-left: 107px;
@@ -91,6 +102,15 @@ body {
       line-height: 4.5rem;
       font-size: $f7;
     }
+  }
+
+  img {
+    max-width: 900px;
+    margin-left: -200px;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 0 !important; 
+    }    
   }
 }
 
@@ -117,7 +137,8 @@ body {
     .name {
       text-align: right;
       font-family: $title;
-      
+      margin-bottom: 0;
+
     }
   }
 }
