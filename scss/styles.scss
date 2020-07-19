@@ -1,0 +1,124 @@
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                        CSS VARIABLES                           //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+//COLOR VARIABLES
+$dark: #1E1E1E;
+$salmon: #E28981;
+$lightgrey: #EEEEEE;
+
+//FONT VARIABLES
+$title: 'linotype-didot';
+$sanserif: 'futura-pt';
+$serif: 'linotype-sabon';
+$w1: 100;
+$w2: 300;
+$w3: 600;
+
+$f1: 1rem;
+$f2: 1.25rem;
+$f3: 1.5rem;
+$f4: 2.5rem;
+$f5: 3rem;
+$f6: 4rem;
+$f7: 5rem;
+
+//SPACERS
+$sp1: .25rem;
+$sp2: .5rem;
+$sp3: 1rem;
+$sp4: 1.5rem;
+$sp5: 3rem;
+$sp6: 4rem;
+$sp7: 5rem;
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            IMPORTS                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+//BOOTSTRAP COLOR OVERRIDES/ADDITIONS
+$theme-colors: (
+  "dark": $dark,
+  "salmon": $salmon,
+  "lightgrey": $lightgrey
+);
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            GENERAL                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+body {
+  font-family: $sanserif;
+  font-weight: $w1;
+  font-size: $f1;
+  background: $dark;
+}
+
+.overflow {
+  overflow-x:hidden;
+}
+
+
+// // // // // // // // // // // // // // // // // // // // // // //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+.header {
+
+  .titleGroup {
+    position: absolute;
+    left: 10vw;
+    top: 70px;
+
+    .sub {
+      margin-left: 107px;
+    }
+
+    h1 {
+      color: $lightgrey;
+      font-family: $title;
+      font-weight: $w1;
+      margin-bottom: 0;
+      line-height: 4.5rem;
+      font-size: $f7;
+    }
+  }
+}
+
+.nav {
+  background: $lightgrey;
+  padding: $sp3;
+  text-transform: uppercase;
+}
+
+.main {
+  width: 100%;
+
+  .quote {
+    width: 75%;
+    text-align: center;
+    margin: $sp5 auto;
+    color: $lightgrey;
+    font-family: $serif;
+
+    .content {
+      text-align: justify;
+    }
+
+    .name {
+      text-align: right;
+      font-family: $title;
+      
+    }
+  }
+}
+
