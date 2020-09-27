@@ -153,7 +153,7 @@ hr {
 }
 
 .main {
-  width: 100%;
+  //width: 100%;
 
   .quote {
     text-align: center;
@@ -205,8 +205,9 @@ hr {
   .duo {
 
     img {
-      width: 100%;
+      //width: 100%;
       margin: $sp6 0 $sp3 0;
+      max-width: 1200px;
     }
 
   }
